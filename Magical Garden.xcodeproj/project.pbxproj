@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D04486192C3333710078C27F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04486182C3333710078C27F /* AppDelegate.swift */; };
+		D044861B2C3333710078C27F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D044861A2C3333710078C27F /* ContentView.swift */; };
+		D044861D2C3333730078C27F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D044861C2C3333730078C27F /* Assets.xcassets */; };
+		D04486202C3333730078C27F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D044861F2C3333730078C27F /* Preview Assets.xcassets */; };
+		D044862A2C3333740078C27F /* Magical_GardenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04486292C3333740078C27F /* Magical_GardenTests.swift */; };
+		D04486342C3333740078C27F /* Magical_GardenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04486332C3333740078C27F /* Magical_GardenUITests.swift */; };
+		D04486362C3333740078C27F /* Magical_GardenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04486352C3333740078C27F /* Magical_GardenUITestsLaunchTests.swift */; };
+		D04486442C3339E10078C27F /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04486432C3339E10078C27F /* Plant.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D04486262C3333740078C27F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D044860D2C3333710078C27F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D04486142C3333710078C27F;
+			remoteInfo = "Magical Garden";
+		};
+		D04486302C3333740078C27F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D044860D2C3333710078C27F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D04486142C3333710078C27F;
+			remoteInfo = "Magical Garden";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D04486152C3333710078C27F /* Magical Garden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magical Garden.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04486182C3333710078C27F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D044861A2C3333710078C27F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D044861C2C3333730078C27F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D044861F2C3333730078C27F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D04486252C3333740078C27F /* Magical GardenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Magical GardenTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04486292C3333740078C27F /* Magical_GardenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magical_GardenTests.swift; sourceTree = "<group>"; };
+		D044862F2C3333740078C27F /* Magical GardenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Magical GardenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04486332C3333740078C27F /* Magical_GardenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magical_GardenUITests.swift; sourceTree = "<group>"; };
+		D04486352C3333740078C27F /* Magical_GardenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magical_GardenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D04486432C3339E10078C27F /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D04486122C3333710078C27F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04486222C3333740078C27F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D044862C2C3333740078C27F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D044860C2C3333710078C27F = {
+			isa = PBXGroup;
+			children = (
+				D04486172C3333710078C27F /* Magical Garden */,
+				D04486282C3333740078C27F /* Magical GardenTests */,
+				D04486322C3333740078C27F /* Magical GardenUITests */,
+				D04486162C3333710078C27F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D04486162C3333710078C27F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D04486152C3333710078C27F /* Magical Garden.app */,
+				D04486252C3333740078C27F /* Magical GardenTests.xctest */,
+				D044862F2C3333740078C27F /* Magical GardenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D04486172C3333710078C27F /* Magical Garden */ = {
+			isa = PBXGroup;
+			children = (
+				D04486182C3333710078C27F /* AppDelegate.swift */,
+				D044861A2C3333710078C27F /* ContentView.swift */,
+				D04486422C3339C60078C27F /* Models */,
+				D044861C2C3333730078C27F /* Assets.xcassets */,
+				D044861E2C3333730078C27F /* Preview Content */,
+			);
+			path = "Magical Garden";
+			sourceTree = "<group>";
+		};
+		D044861E2C3333730078C27F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D044861F2C3333730078C27F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D04486282C3333740078C27F /* Magical GardenTests */ = {
+			isa = PBXGroup;
+			children = (
+				D04486292C3333740078C27F /* Magical_GardenTests.swift */,
+			);
+			path = "Magical GardenTests";
+			sourceTree = "<group>";
+		};
+		D04486322C3333740078C27F /* Magical GardenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D04486332C3333740078C27F /* Magical_GardenUITests.swift */,
+				D04486352C3333740078C27F /* Magical_GardenUITestsLaunchTests.swift */,
+			);
+			path = "Magical GardenUITests";
+			sourceTree = "<group>";
+		};
+		D04486422C3339C60078C27F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D04486432C3339E10078C27F /* Plant.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D04486142C3333710078C27F /* Magical Garden */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D04486392C3333740078C27F /* Build configuration list for PBXNativeTarget "Magical Garden" */;
+			buildPhases = (
+				D04486112C3333710078C27F /* Sources */,
+				D04486122C3333710078C27F /* Frameworks */,
+				D04486132C3333710078C27F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Magical Garden";
+			productName = "Magical Garden";
+			productReference = D04486152C3333710078C27F /* Magical Garden.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D04486242C3333740078C27F /* Magical GardenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D044863C2C3333740078C27F /* Build configuration list for PBXNativeTarget "Magical GardenTests" */;
+			buildPhases = (
+				D04486212C3333740078C27F /* Sources */,
+				D04486222C3333740078C27F /* Frameworks */,
+				D04486232C3333740078C27F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D04486272C3333740078C27F /* PBXTargetDependency */,
+			);
+			name = "Magical GardenTests";
+			productName = "Magical GardenTests";
+			productReference = D04486252C3333740078C27F /* Magical GardenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D044862E2C3333740078C27F /* Magical GardenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D044863F2C3333740078C27F /* Build configuration list for PBXNativeTarget "Magical GardenUITests" */;
+			buildPhases = (
+				D044862B2C3333740078C27F /* Sources */,
+				D044862C2C3333740078C27F /* Frameworks */,
+				D044862D2C3333740078C27F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D04486312C3333740078C27F /* PBXTargetDependency */,
+			);
+			name = "Magical GardenUITests";
+			productName = "Magical GardenUITests";
+			productReference = D044862F2C3333740078C27F /* Magical GardenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D044860D2C3333710078C27F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					D04486142C3333710078C27F = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					D04486242C3333740078C27F = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = D04486142C3333710078C27F;
+					};
+					D044862E2C3333740078C27F = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = D04486142C3333710078C27F;
+					};
+				};
+			};
+			buildConfigurationList = D04486102C3333710078C27F /* Build configuration list for PBXProject "Magical Garden" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D044860C2C3333710078C27F;
+			productRefGroup = D04486162C3333710078C27F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D04486142C3333710078C27F /* Magical Garden */,
+				D04486242C3333740078C27F /* Magical GardenTests */,
+				D044862E2C3333740078C27F /* Magical GardenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D04486132C3333710078C27F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04486202C3333730078C27F /* Preview Assets.xcassets in Resources */,
+				D044861D2C3333730078C27F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04486232C3333740078C27F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D044862D2C3333740078C27F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D04486112C3333710078C27F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D044861B2C3333710078C27F /* ContentView.swift in Sources */,
+				D04486442C3339E10078C27F /* Plant.swift in Sources */,
+				D04486192C3333710078C27F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04486212C3333740078C27F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D044862A2C3333740078C27F /* Magical_GardenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D044862B2C3333740078C27F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04486362C3333740078C27F /* Magical_GardenUITestsLaunchTests.swift in Sources */,
+				D04486342C3333740078C27F /* Magical_GardenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D04486272C3333740078C27F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D04486142C3333710078C27F /* Magical Garden */;
+			targetProxy = D04486262C3333740078C27F /* PBXContainerItemProxy */;
+		};
+		D04486312C3333740078C27F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D04486142C3333710078C27F /* Magical Garden */;
+			targetProxy = D04486302C3333740078C27F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D04486372C3333740078C27F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D04486382C3333740078C27F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D044863A2C3333740078C27F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Magical Garden/Preview Content\"";
+				DEVELOPMENT_TEAM = 5FDLG4RNFN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.academy.jkeraa.Magical-Garden";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D044863B2C3333740078C27F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Magical Garden/Preview Content\"";
+				DEVELOPMENT_TEAM = 5FDLG4RNFN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.academy.jkeraa.Magical-Garden";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D044863D2C3333740078C27F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FDLG4RNFN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.academy.jkeraa.Magical-GardenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magical Garden.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Magical Garden";
+			};
+			name = Debug;
+		};
+		D044863E2C3333740078C27F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FDLG4RNFN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.academy.jkeraa.Magical-GardenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magical Garden.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Magical Garden";
+			};
+			name = Release;
+		};
+		D04486402C3333740078C27F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FDLG4RNFN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.academy.jkeraa.Magical-GardenUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Magical Garden";
+			};
+			name = Debug;
+		};
+		D04486412C3333740078C27F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FDLG4RNFN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.academy.jkeraa.Magical-GardenUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Magical Garden";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D04486102C3333710078C27F /* Build configuration list for PBXProject "Magical Garden" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D04486372C3333740078C27F /* Debug */,
+				D04486382C3333740078C27F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D04486392C3333740078C27F /* Build configuration list for PBXNativeTarget "Magical Garden" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D044863A2C3333740078C27F /* Debug */,
+				D044863B2C3333740078C27F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D044863C2C3333740078C27F /* Build configuration list for PBXNativeTarget "Magical GardenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D044863D2C3333740078C27F /* Debug */,
+				D044863E2C3333740078C27F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D044863F2C3333740078C27F /* Build configuration list for PBXNativeTarget "Magical GardenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D04486402C3333740078C27F /* Debug */,
+				D04486412C3333740078C27F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D044860D2C3333710078C27F /* Project object */;
+}
