@@ -1,0 +1,24 @@
+{
+  "originHash" : "e9b541da72700c5584c05c1a96ad256c7e6d295ff6793a0822d14e8c00e62e12",
+  "pins" : [
+    {
+      "identity" : "focusentity",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/maxxfrazer/FocusEntity",
+      "state" : {
+        "revision" : "5fa521172e447cbfa8c2fc1d6602d9d6bed202c7",
+        "version" : "2.5.1"
+      }
+    },
+    {
+      "identity" : "realitykit-text",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Reality-Dev/RealityKit-Text",
+      "state" : {
+        "revision" : "ebb471c9f84c80cc56d913d9395291252f8ab3b8",
+        "version" : "1.0.31"
+      }
+    }
+  ],
+  "version" : 3
+}

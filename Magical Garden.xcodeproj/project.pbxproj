@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D00A1E9A2C3A77A20029F340 /* PostProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A1E972C3A77A20029F340 /* PostProcess.swift */; };
+		D00A1E9B2C3A77A20029F340 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A1E942C3A77A20029F340 /* Filter.swift */; };
+		D00A1E9C2C3A77A20029F340 /* PostProcess.metal in Sources */ = {isa = PBXBuildFile; fileRef = D00A1E982C3A77A20029F340 /* PostProcess.metal */; };
+		D00A1E9D2C3A77A20029F340 /* FunctionConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A1E952C3A77A20029F340 /* FunctionConstants.swift */; };
+		D010C05E2C3A980A00F62384 /* plant3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D010C05D2C3A980A00F62384 /* plant3.usdz */; };
+		D010C05F2C3A980A00F62384 /* plant2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D010C05C2C3A980A00F62384 /* plant2.usdz */; };
+		D010C0602C3A980A00F62384 /* plant1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D010C05B2C3A980A00F62384 /* plant1.usdz */; };
+		D010C0642C3A998400F62384 /* plant3_full.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D010C0632C3A998400F62384 /* plant3_full.usdz */; };
+		D010C0652C3A998400F62384 /* plant2_full.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D010C0622C3A998400F62384 /* plant2_full.usdz */; };
+		D010C0662C3A998400F62384 /* plant1_full.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D010C0612C3A998400F62384 /* plant1_full.usdz */; };
+		D0301BBD2C3B082D00ABA177 /* TextEntity in Frameworks */ = {isa = PBXBuildFile; productRef = D0301BBC2C3B082D00ABA177 /* TextEntity */; };
 		D04486192C3333710078C27F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04486182C3333710078C27F /* AppDelegate.swift */; };
 		D044861B2C3333710078C27F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D044861A2C3333710078C27F /* ContentView.swift */; };
 		D044861D2C3333730078C27F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D044861C2C3333730078C27F /* Assets.xcassets */; };
@@ -14,7 +25,44 @@
 		D044862A2C3333740078C27F /* Magical_GardenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04486292C3333740078C27F /* Magical_GardenTests.swift */; };
 		D04486342C3333740078C27F /* Magical_GardenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04486332C3333740078C27F /* Magical_GardenUITests.swift */; };
 		D04486362C3333740078C27F /* Magical_GardenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04486352C3333740078C27F /* Magical_GardenUITestsLaunchTests.swift */; };
-		D04486442C3339E10078C27F /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04486432C3339E10078C27F /* Plant.swift */; };
+		D04486542C33DF860078C27F /* ARManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04486532C33DF860078C27F /* ARManager.swift */; };
+		D04486572C33E9DB0078C27F /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = D04486562C33E9DB0078C27F /* FocusEntity */; };
+		D051D5D92C3B6AE70092B167 /* SFX_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = D051D5D22C3B6AE70092B167 /* SFX_3.wav */; };
+		D051D5DA2C3B6AE70092B167 /* Music.wav in Resources */ = {isa = PBXBuildFile; fileRef = D051D5CF2C3B6AE70092B167 /* Music.wav */; };
+		D051D5DB2C3B6AE70092B167 /* SFX_7.wav in Resources */ = {isa = PBXBuildFile; fileRef = D051D5D62C3B6AE70092B167 /* SFX_7.wav */; };
+		D051D5DC2C3B6AE70092B167 /* SFX_4.wav in Resources */ = {isa = PBXBuildFile; fileRef = D051D5D32C3B6AE70092B167 /* SFX_4.wav */; };
+		D051D5DD2C3B6AE70092B167 /* SFX_5.wav in Resources */ = {isa = PBXBuildFile; fileRef = D051D5D42C3B6AE70092B167 /* SFX_5.wav */; };
+		D051D5DE2C3B6AE70092B167 /* SFX_8.wav in Resources */ = {isa = PBXBuildFile; fileRef = D051D5D72C3B6AE70092B167 /* SFX_8.wav */; };
+		D051D5DF2C3B6AE70092B167 /* SFX_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D051D5D12C3B6AE70092B167 /* SFX_2.wav */; };
+		D051D5E02C3B6AE70092B167 /* SFX_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D051D5D02C3B6AE70092B167 /* SFX_1.wav */; };
+		D051D5E12C3B6AE70092B167 /* SFX_6.wav in Resources */ = {isa = PBXBuildFile; fileRef = D051D5D52C3B6AE70092B167 /* SFX_6.wav */; };
+		D051D5E32C3BD2750092B167 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5E22C3BD2750092B167 /* SoundManager.swift */; };
+		D051D5E52C3BD5F00092B167 /* HapticFeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5E42C3BD5F00092B167 /* HapticFeedbackManager.swift */; };
+		D051D5E72C3BF4660092B167 /* DropDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5E62C3BF4660092B167 /* DropDownMenu.swift */; };
+		D051D5EB2C3BF4A30092B167 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5EA2C3BF4A30092B167 /* OnBoardingView.swift */; };
+		D051D5ED2C3BF4B90092B167 /* OnBoardingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5EC2C3BF4B90092B167 /* OnBoardingCard.swift */; };
+		D051D5F12C3BF51F0092B167 /* SnapShotThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5F02C3BF51F0092B167 /* SnapShotThumbnail.swift */; };
+		D051D5F32C3BF53F0092B167 /* SessionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5F22C3BF53F0092B167 /* SessionInfo.swift */; };
+		D051D5F52C3BF5640092B167 /* SaveLoadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5F42C3BF5640092B167 /* SaveLoadButton.swift */; };
+		D051D5F72C3BF57F0092B167 /* MappingStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5F62C3BF57F0092B167 /* MappingStatusView.swift */; };
+		D051D5F92C3BF5B60092B167 /* SnapshotAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5F82C3BF5B60092B167 /* SnapshotAnchor.swift */; };
+		D051D5FB2C3BF5E30092B167 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5FA2C3BF5E30092B167 /* Extensions.swift */; };
+		D051D5FD2C3BF60C0092B167 /* MetalLibLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5FC2C3BF60C0092B167 /* MetalLibLoader.swift */; };
+		D051D5FF2C3BF6400092B167 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5FE2C3BF6400092B167 /* Functional.swift */; };
+		D0DA75FD2C38822000CF421D /* CustomARView+Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA75FA2C38822000CF421D /* CustomARView+Persistence.swift */; };
+		D0DA75FE2C38822000CF421D /* CustomARView+Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA75FB2C38822000CF421D /* CustomARView+Render.swift */; };
+		D0DA75FF2C38822000CF421D /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA75F72C38822000CF421D /* CustomARView.swift */; };
+		D0DA76002C38822000CF421D /* CustomARView+Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA75F92C38822000CF421D /* CustomARView+Session.swift */; };
+		D0DA76012C38822000CF421D /* CustomARView+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA75F82C38822000CF421D /* CustomARView+Gesture.swift */; };
+		D0DA760A2C3882CC00CF421D /* SaveLoadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA76032C3882CC00CF421D /* SaveLoadState.swift */; };
+		D0DA760B2C3882CC00CF421D /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA76062C3882CC00CF421D /* Plant.swift */; };
+		D0DA760C2C3882CC00CF421D /* OnBoardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA76072C3882CC00CF421D /* OnBoardingItem.swift */; };
+		D0DA760D2C3882CC00CF421D /* ARState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA76042C3882CC00CF421D /* ARState.swift */; };
+		D0DA760E2C3882CC00CF421D /* OnBoardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA76082C3882CC00CF421D /* OnBoardingData.swift */; };
+		D0DA760F2C3882CC00CF421D /* ButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA76052C3882CC00CF421D /* ButtonState.swift */; };
+		D0DA762B2C39BC6C00CF421D /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA762A2C39BC6C00CF421D /* ControlView.swift */; };
+		D0DA762D2C3A028A00CF421D /* SessionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA762C2C3A028A00CF421D /* SessionSettings.swift */; };
+		D0DA762F2C3A039000CF421D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA762E2C3A039000CF421D /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +83,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D00A1E942C3A77A20029F340 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		D00A1E952C3A77A20029F340 /* FunctionConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionConstants.swift; sourceTree = "<group>"; };
+		D00A1E972C3A77A20029F340 /* PostProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProcess.swift; sourceTree = "<group>"; };
+		D00A1E982C3A77A20029F340 /* PostProcess.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PostProcess.metal; sourceTree = "<group>"; };
+		D010C05B2C3A980A00F62384 /* plant1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = plant1.usdz; sourceTree = "<group>"; };
+		D010C05C2C3A980A00F62384 /* plant2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = plant2.usdz; sourceTree = "<group>"; };
+		D010C05D2C3A980A00F62384 /* plant3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = plant3.usdz; sourceTree = "<group>"; };
+		D010C0612C3A998400F62384 /* plant1_full.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = plant1_full.usdz; sourceTree = "<group>"; };
+		D010C0622C3A998400F62384 /* plant2_full.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = plant2_full.usdz; sourceTree = "<group>"; };
+		D010C0632C3A998400F62384 /* plant3_full.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = plant3_full.usdz; sourceTree = "<group>"; };
+		D0301BB92C3AE4F300ABA177 /* Magical-Garden-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Magical-Garden-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D04486152C3333710078C27F /* Magical Garden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magical Garden.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04486182C3333710078C27F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D044861A2C3333710078C27F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,7 +104,43 @@
 		D044862F2C3333740078C27F /* Magical GardenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Magical GardenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04486332C3333740078C27F /* Magical_GardenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magical_GardenUITests.swift; sourceTree = "<group>"; };
 		D04486352C3333740078C27F /* Magical_GardenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magical_GardenUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D04486432C3339E10078C27F /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		D04486532C33DF860078C27F /* ARManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARManager.swift; sourceTree = "<group>"; };
+		D051D5CF2C3B6AE70092B167 /* Music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Music.wav; sourceTree = "<group>"; };
+		D051D5D02C3B6AE70092B167 /* SFX_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SFX_1.wav; sourceTree = "<group>"; };
+		D051D5D12C3B6AE70092B167 /* SFX_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SFX_2.wav; sourceTree = "<group>"; };
+		D051D5D22C3B6AE70092B167 /* SFX_3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SFX_3.wav; sourceTree = "<group>"; };
+		D051D5D32C3B6AE70092B167 /* SFX_4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SFX_4.wav; sourceTree = "<group>"; };
+		D051D5D42C3B6AE70092B167 /* SFX_5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SFX_5.wav; sourceTree = "<group>"; };
+		D051D5D52C3B6AE70092B167 /* SFX_6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SFX_6.wav; sourceTree = "<group>"; };
+		D051D5D62C3B6AE70092B167 /* SFX_7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SFX_7.wav; sourceTree = "<group>"; };
+		D051D5D72C3B6AE70092B167 /* SFX_8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SFX_8.wav; sourceTree = "<group>"; };
+		D051D5E22C3BD2750092B167 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		D051D5E42C3BD5F00092B167 /* HapticFeedbackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackManager.swift; sourceTree = "<group>"; };
+		D051D5E62C3BF4660092B167 /* DropDownMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenu.swift; sourceTree = "<group>"; };
+		D051D5EA2C3BF4A30092B167 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		D051D5EC2C3BF4B90092B167 /* OnBoardingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCard.swift; sourceTree = "<group>"; };
+		D051D5F02C3BF51F0092B167 /* SnapShotThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapShotThumbnail.swift; sourceTree = "<group>"; };
+		D051D5F22C3BF53F0092B167 /* SessionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionInfo.swift; sourceTree = "<group>"; };
+		D051D5F42C3BF5640092B167 /* SaveLoadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLoadButton.swift; sourceTree = "<group>"; };
+		D051D5F62C3BF57F0092B167 /* MappingStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingStatusView.swift; sourceTree = "<group>"; };
+		D051D5F82C3BF5B60092B167 /* SnapshotAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotAnchor.swift; sourceTree = "<group>"; };
+		D051D5FA2C3BF5E30092B167 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D051D5FC2C3BF60C0092B167 /* MetalLibLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalLibLoader.swift; sourceTree = "<group>"; };
+		D051D5FE2C3BF6400092B167 /* Functional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functional.swift; sourceTree = "<group>"; };
+		D0DA75F72C38822000CF421D /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		D0DA75F82C38822000CF421D /* CustomARView+Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomARView+Gesture.swift"; sourceTree = "<group>"; };
+		D0DA75F92C38822000CF421D /* CustomARView+Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomARView+Session.swift"; sourceTree = "<group>"; };
+		D0DA75FA2C38822000CF421D /* CustomARView+Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomARView+Persistence.swift"; sourceTree = "<group>"; };
+		D0DA75FB2C38822000CF421D /* CustomARView+Render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomARView+Render.swift"; sourceTree = "<group>"; };
+		D0DA76032C3882CC00CF421D /* SaveLoadState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLoadState.swift; sourceTree = "<group>"; };
+		D0DA76042C3882CC00CF421D /* ARState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARState.swift; sourceTree = "<group>"; };
+		D0DA76052C3882CC00CF421D /* ButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonState.swift; sourceTree = "<group>"; };
+		D0DA76062C3882CC00CF421D /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		D0DA76072C3882CC00CF421D /* OnBoardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingItem.swift; sourceTree = "<group>"; };
+		D0DA76082C3882CC00CF421D /* OnBoardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingData.swift; sourceTree = "<group>"; };
+		D0DA762A2C39BC6C00CF421D /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		D0DA762C2C3A028A00CF421D /* SessionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSettings.swift; sourceTree = "<group>"; };
+		D0DA762E2C3A039000CF421D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +148,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0301BBD2C3B082D00ABA177 /* TextEntity in Frameworks */,
+				D04486572C33E9DB0078C27F /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +170,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D00A1E992C3A77A20029F340 /* PostProcess */ = {
+			isa = PBXGroup;
+			children = (
+				D00A1E972C3A77A20029F340 /* PostProcess.swift */,
+				D00A1E942C3A77A20029F340 /* Filter.swift */,
+				D00A1E952C3A77A20029F340 /* FunctionConstants.swift */,
+				D00A1E982C3A77A20029F340 /* PostProcess.metal */,
+			);
+			path = PostProcess;
+			sourceTree = "<group>";
+		};
+		D00A1EA22C3A77F20029F340 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D051D5E22C3BD2750092B167 /* SoundManager.swift */,
+				D051D5E42C3BD5F00092B167 /* HapticFeedbackManager.swift */,
+				D051D5F82C3BF5B60092B167 /* SnapshotAnchor.swift */,
+				D051D5FA2C3BF5E30092B167 /* Extensions.swift */,
+				D051D5FC2C3BF60C0092B167 /* MetalLibLoader.swift */,
+				D051D5FE2C3BF6400092B167 /* Functional.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D0301BBB2C3B082D00ABA177 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D044860C2C3333710078C27F = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +208,7 @@
 				D04486282C3333740078C27F /* Magical GardenTests */,
 				D04486322C3333740078C27F /* Magical GardenUITests */,
 				D04486162C3333710078C27F /* Products */,
+				D0301BBB2C3B082D00ABA177 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,11 +225,25 @@
 		D04486172C3333710078C27F /* Magical Garden */ = {
 			isa = PBXGroup;
 			children = (
+				D0301BB92C3AE4F300ABA177 /* Magical-Garden-Info.plist */,
 				D04486182C3333710078C27F /* AppDelegate.swift */,
 				D044861A2C3333710078C27F /* ContentView.swift */,
-				D04486422C3339C60078C27F /* Models */,
+				D051D6002C3C75AD0092B167 /* OnBoarding */,
+				D0DA76182C3882F400CF421D /* Views */,
+				D0DA76092C3882CC00CF421D /* Model */,
+				D0DA75FC2C38822000CF421D /* CustomARView */,
+				D00A1E992C3A77A20029F340 /* PostProcess */,
+				D00A1EA22C3A77F20029F340 /* Helpers */,
 				D044861C2C3333730078C27F /* Assets.xcassets */,
+				D051D5D82C3B6AE70092B167 /* Audio FX */,
+				D010C05B2C3A980A00F62384 /* plant1.usdz */,
+				D010C05C2C3A980A00F62384 /* plant2.usdz */,
+				D010C05D2C3A980A00F62384 /* plant3.usdz */,
+				D010C0612C3A998400F62384 /* plant1_full.usdz */,
+				D010C0622C3A998400F62384 /* plant2_full.usdz */,
+				D010C0632C3A998400F62384 /* plant3_full.usdz */,
 				D044861E2C3333730078C27F /* Preview Content */,
+				D0DA762C2C3A028A00CF421D /* SessionSettings.swift */,
 			);
 			path = "Magical Garden";
 			sourceTree = "<group>";
@@ -130,12 +273,69 @@
 			path = "Magical GardenUITests";
 			sourceTree = "<group>";
 		};
-		D04486422C3339C60078C27F /* Models */ = {
+		D051D5D82C3B6AE70092B167 /* Audio FX */ = {
 			isa = PBXGroup;
 			children = (
-				D04486432C3339E10078C27F /* Plant.swift */,
+				D051D5CF2C3B6AE70092B167 /* Music.wav */,
+				D051D5D02C3B6AE70092B167 /* SFX_1.wav */,
+				D051D5D12C3B6AE70092B167 /* SFX_2.wav */,
+				D051D5D22C3B6AE70092B167 /* SFX_3.wav */,
+				D051D5D32C3B6AE70092B167 /* SFX_4.wav */,
+				D051D5D42C3B6AE70092B167 /* SFX_5.wav */,
+				D051D5D52C3B6AE70092B167 /* SFX_6.wav */,
+				D051D5D62C3B6AE70092B167 /* SFX_7.wav */,
+				D051D5D72C3B6AE70092B167 /* SFX_8.wav */,
 			);
-			path = Models;
+			path = "Audio FX";
+			sourceTree = "<group>";
+		};
+		D051D6002C3C75AD0092B167 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				D051D5EA2C3BF4A30092B167 /* OnBoardingView.swift */,
+				D051D5EC2C3BF4B90092B167 /* OnBoardingCard.swift */,
+				D0DA76072C3882CC00CF421D /* OnBoardingItem.swift */,
+				D0DA76082C3882CC00CF421D /* OnBoardingData.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		D0DA75FC2C38822000CF421D /* CustomARView */ = {
+			isa = PBXGroup;
+			children = (
+				D0DA75F72C38822000CF421D /* CustomARView.swift */,
+				D04486532C33DF860078C27F /* ARManager.swift */,
+				D0DA75F82C38822000CF421D /* CustomARView+Gesture.swift */,
+				D0DA75F92C38822000CF421D /* CustomARView+Session.swift */,
+				D0DA75FA2C38822000CF421D /* CustomARView+Persistence.swift */,
+				D0DA75FB2C38822000CF421D /* CustomARView+Render.swift */,
+			);
+			path = CustomARView;
+			sourceTree = "<group>";
+		};
+		D0DA76092C3882CC00CF421D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0DA76032C3882CC00CF421D /* SaveLoadState.swift */,
+				D0DA76042C3882CC00CF421D /* ARState.swift */,
+				D0DA76052C3882CC00CF421D /* ButtonState.swift */,
+				D0DA76062C3882CC00CF421D /* Plant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0DA76182C3882F400CF421D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0DA762A2C39BC6C00CF421D /* ControlView.swift */,
+				D0DA762E2C3A039000CF421D /* SettingsView.swift */,
+				D051D5E62C3BF4660092B167 /* DropDownMenu.swift */,
+				D051D5F02C3BF51F0092B167 /* SnapShotThumbnail.swift */,
+				D051D5F22C3BF53F0092B167 /* SessionInfo.swift */,
+				D051D5F42C3BF5640092B167 /* SaveLoadButton.swift */,
+				D051D5F62C3BF57F0092B167 /* MappingStatusView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +354,10 @@
 			dependencies = (
 			);
 			name = "Magical Garden";
+			packageProductDependencies = (
+				D04486562C33E9DB0078C27F /* FocusEntity */,
+				D0301BBC2C3B082D00ABA177 /* TextEntity */,
+			);
 			productName = "Magical Garden";
 			productReference = D04486152C3333710078C27F /* Magical Garden.app */;
 			productType = "com.apple.product-type.application";
@@ -226,6 +430,10 @@
 				Base,
 			);
 			mainGroup = D044860C2C3333710078C27F;
+			packageReferences = (
+				D04486552C33E9470078C27F /* XCRemoteSwiftPackageReference "FocusEntity" */,
+				D0301BBA2C3B081900ABA177 /* XCRemoteSwiftPackageReference "RealityKit-Text" */,
+			);
 			productRefGroup = D04486162C3333710078C27F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -243,6 +451,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				D04486202C3333730078C27F /* Preview Assets.xcassets in Resources */,
+				D010C05E2C3A980A00F62384 /* plant3.usdz in Resources */,
+				D010C05F2C3A980A00F62384 /* plant2.usdz in Resources */,
+				D051D5D92C3B6AE70092B167 /* SFX_3.wav in Resources */,
+				D051D5DA2C3B6AE70092B167 /* Music.wav in Resources */,
+				D051D5DB2C3B6AE70092B167 /* SFX_7.wav in Resources */,
+				D051D5DC2C3B6AE70092B167 /* SFX_4.wav in Resources */,
+				D051D5DD2C3B6AE70092B167 /* SFX_5.wav in Resources */,
+				D051D5DE2C3B6AE70092B167 /* SFX_8.wav in Resources */,
+				D051D5DF2C3B6AE70092B167 /* SFX_2.wav in Resources */,
+				D051D5E02C3B6AE70092B167 /* SFX_1.wav in Resources */,
+				D051D5E12C3B6AE70092B167 /* SFX_6.wav in Resources */,
+				D010C0642C3A998400F62384 /* plant3_full.usdz in Resources */,
+				D010C0652C3A998400F62384 /* plant2_full.usdz in Resources */,
+				D010C0662C3A998400F62384 /* plant1_full.usdz in Resources */,
+				D010C0602C3A980A00F62384 /* plant1.usdz in Resources */,
 				D044861D2C3333730078C27F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,9 +491,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0DA760A2C3882CC00CF421D /* SaveLoadState.swift in Sources */,
+				D0DA760B2C3882CC00CF421D /* Plant.swift in Sources */,
+				D0DA760C2C3882CC00CF421D /* OnBoardingItem.swift in Sources */,
+				D0DA760D2C3882CC00CF421D /* ARState.swift in Sources */,
+				D0DA760E2C3882CC00CF421D /* OnBoardingData.swift in Sources */,
+				D051D5F72C3BF57F0092B167 /* MappingStatusView.swift in Sources */,
+				D051D5FF2C3BF6400092B167 /* Functional.swift in Sources */,
+				D0DA760F2C3882CC00CF421D /* ButtonState.swift in Sources */,
+				D04486542C33DF860078C27F /* ARManager.swift in Sources */,
+				D051D5E72C3BF4660092B167 /* DropDownMenu.swift in Sources */,
 				D044861B2C3333710078C27F /* ContentView.swift in Sources */,
-				D04486442C3339E10078C27F /* Plant.swift in Sources */,
+				D0DA75FD2C38822000CF421D /* CustomARView+Persistence.swift in Sources */,
+				D0DA75FE2C38822000CF421D /* CustomARView+Render.swift in Sources */,
+				D0DA75FF2C38822000CF421D /* CustomARView.swift in Sources */,
+				D051D5ED2C3BF4B90092B167 /* OnBoardingCard.swift in Sources */,
+				D051D5E32C3BD2750092B167 /* SoundManager.swift in Sources */,
+				D051D5FB2C3BF5E30092B167 /* Extensions.swift in Sources */,
+				D051D5F32C3BF53F0092B167 /* SessionInfo.swift in Sources */,
+				D051D5FD2C3BF60C0092B167 /* MetalLibLoader.swift in Sources */,
+				D051D5EB2C3BF4A30092B167 /* OnBoardingView.swift in Sources */,
+				D051D5F92C3BF5B60092B167 /* SnapshotAnchor.swift in Sources */,
+				D0DA762F2C3A039000CF421D /* SettingsView.swift in Sources */,
+				D00A1E9A2C3A77A20029F340 /* PostProcess.swift in Sources */,
+				D051D5E52C3BD5F00092B167 /* HapticFeedbackManager.swift in Sources */,
+				D00A1E9B2C3A77A20029F340 /* Filter.swift in Sources */,
+				D00A1E9C2C3A77A20029F340 /* PostProcess.metal in Sources */,
+				D00A1E9D2C3A77A20029F340 /* FunctionConstants.swift in Sources */,
+				D051D5F12C3BF51F0092B167 /* SnapShotThumbnail.swift in Sources */,
+				D0DA762B2C39BC6C00CF421D /* ControlView.swift in Sources */,
+				D0DA76002C38822000CF421D /* CustomARView+Session.swift in Sources */,
+				D0DA76012C38822000CF421D /* CustomARView+Gesture.swift in Sources */,
 				D04486192C3333710078C27F /* AppDelegate.swift in Sources */,
+				D051D5F52C3BF5640092B167 /* SaveLoadButton.swift in Sources */,
+				D0DA762D2C3A028A00CF421D /* SessionSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,13 +691,14 @@
 				DEVELOPMENT_TEAM = 5FDLG4RNFN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Magical-Garden-Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,9 +707,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "it.academy.jkeraa.Magical-Garden";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -469,13 +728,14 @@
 				DEVELOPMENT_TEAM = 5FDLG4RNFN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Magical-Garden-Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -484,9 +744,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "it.academy.jkeraa.Magical-Garden";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -602,6 +866,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0301BBA2C3B081900ABA177 /* XCRemoteSwiftPackageReference "RealityKit-Text" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Reality-Dev/RealityKit-Text";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.31;
+			};
+		};
+		D04486552C33E9470078C27F /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0301BBC2C3B082D00ABA177 /* TextEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0301BBA2C3B081900ABA177 /* XCRemoteSwiftPackageReference "RealityKit-Text" */;
+			productName = TextEntity;
+		};
+		D04486562C33E9DB0078C27F /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D04486552C33E9470078C27F /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D044860D2C3333710078C27F /* Project object */;
 }
