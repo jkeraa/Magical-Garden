@@ -64,11 +64,6 @@ struct ControlView: View {
         }
     }
 }
-struct ControlVisibilityToggleButton: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
 
 struct ControlButtonBar: View {
     @Binding var showSettings: Bool

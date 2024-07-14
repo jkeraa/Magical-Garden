@@ -8,6 +8,7 @@
 import SwiftUI
 import Foundation
 
+/// View for onboarding users with a series of onboarding cards.
 struct OnBoardingView: View {
     var onBoardingItem: [OnBoardingItem] = onBoardingData
     var opacityEffect: Bool = false
@@ -17,17 +18,20 @@ struct OnBoardingView: View {
     @State private var currentPage: Int = 0
     @AppStorage("isOnboarded") var isOnboarded: Bool?
     
-    
     var body: some View {
         NavigationView {
             VStack {
                 ScrollView(.horizontal) {
                     LazyHStack(spacing: 0) {
                         ForEach(Array(onBoardingItem.enumerated()), id: \.offset) { index, item in
-                            OnBoardingCard( onBoardingItem: item, isCurrentPage: currentPage == index,  indexCard: $indexCard)
-                                .padding(.horizontal, 5)
-                                .containerRelativeFrame(.horizontal)
-                                .id(index)
+                            OnBoardingCard(
+                                onBoardingItem: item,
+                                isCurrentPage: currentPage == index,
+                                indexCard: $indexCard
+                            )
+                            .padding(.horizontal, 5)
+                            .containerRelativeFrame(.horizontal)
+                            .id(index)
                         }
                     }
                     .scrollTargetLayout()
@@ -42,32 +46,33 @@ struct OnBoardingView: View {
                     .onAppear {
                         DispatchQueue.main.async {
                             self.currentPage = 0
-                            
                         }
                     }
                 }
                 .scrollPosition(id: $indexCard)
                 .scrollIndicators(.hidden)
                 .scrollTargetBehavior(.paging)
+                
                 Spacer()
+                
                 HStack {
                     Spacer()
-                    NavigationLink (destination: ContentView().navigationBarBackButtonHidden()
+                    NavigationLink(destination: ContentView()
+                        .navigationBarBackButtonHidden()
                         .onAppear {
                             isOnboarded = true
-                        })
-                    {
-                        Capsule()
-                            .fill(metallicBlue)
-                            .frame(width: 150, height: 40)
-                            .overlay {
-                                Text("Skip the onboarding")
-                                    .foregroundStyle(.white)
-                                    .font(.caption)
-                                    .padding()
-                            }
-                    }
-                    .buttonStyle(.plain)
+                        }) {
+                            Capsule()
+                                .fill(metallicBlue)
+                                .frame(width: 150, height: 40)
+                                .overlay {
+                                    Text("Skip the onboarding")
+                                        .foregroundStyle(.white)
+                                        .font(.caption)
+                                        .padding()
+                                }
+                        }
+                        .buttonStyle(.plain)
                 }
                 .padding()
                 Spacer()
@@ -76,10 +81,8 @@ struct OnBoardingView: View {
     }
 }
 
-
-
+/// View for the paging indicator in the onboarding process.
 struct PagingIndicator: View {
-
     var activeTint: Color = .primary
     var inactiveTint: Color = .gray
     var opacityEffect: Bool = false

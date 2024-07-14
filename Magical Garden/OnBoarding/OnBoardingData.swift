@@ -31,22 +31,22 @@ let onBoardingData : [OnBoardingItem] = [
             
     }()),
     OnBoardingItem( title: {
-        var title = AttributedString( "Place                     \nYour Mystical Plants")
-        if let range = title.range(of: "Plants") {
+        var title = AttributedString( "Place                     \n   Your Mystical Plants")
+        if let range = title.range(of: "Mystical") {
             title[range].foregroundColor = metallicBlue
         }
         return title
         }(), image: Image(systemName: "hand.tap.fill"),
             description: {
-            var description = AttributedString("Find the perfect spot")
+            var description = AttributedString("Find the perfect spot: tap on the screen on suitable flat surfaces indicated by visual cues.")
             if let range = description.range(of: "spot") {
                 description[range].foregroundColor = metallicBlue
             }
             return description
         }()),
     OnBoardingItem(title: {
-        var title = AttributedString( "Nurture Your \nPlants                   .")
-        if let range = title.range(of: "Nurture") {
+        var title = AttributedString( "Take Care Of Your \n  Plants                   .")
+        if let range = title.range(of: "Care") {
             title[range].foregroundColor = metallicBlue
         }
         if let range = title.range(of: ".") {
@@ -55,14 +55,14 @@ let onBoardingData : [OnBoardingItem] = [
         return title
         }(), image: Image(systemName: "drop.degreesign.fill"),
                   description: {
-                  var description = AttributedString("Respond to their calls")
+                  var description = AttributedString("Watch for their calls: respond when they emit effects to ensure their growth.")
                   if let range = description.range(of: "calls") {
                       description[range].foregroundColor = metallicBlue
                   }
                   return description
               }()),
     OnBoardingItem(title: {
-        var title = AttributedString( "Unlock \nthe Garden Bloom.          ,")
+        var title = AttributedString( "Unlock \n   the Garden Bloom.          ,")
         if let range = title.range(of: "Bloom") {
             title[range].foregroundColor = metallicBlue
         }
@@ -75,11 +75,11 @@ let onBoardingData : [OnBoardingItem] = [
         return title
         }(), image: Image(systemName: "light.max"),
                   description: {
-                  var description = AttributedString("Witness the magic unfold")
+                  var description = AttributedString("Nurture all your plants and immerse yourself in the magic with beautiful visuals and delightful music")
                   if let range = description.range(of: "magic") {
                       description[range].foregroundColor = metallicBlue
                   }
-                      if let range = description.range(of: "music experience") {
+                      if let range = description.range(of: "plants") {
                           description[range].foregroundColor = metallicBlue
                       }
                   return description

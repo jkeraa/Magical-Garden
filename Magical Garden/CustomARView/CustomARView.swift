@@ -5,68 +5,83 @@
 //  Created by Jacques André Kerambrun on 05/07/24.
 //
 
-//
-//  CustomARView.swift
-//  Magical Garden
-//
-//  Created by Jacques André Kerambrun on 05/07/24.
-//
-
 import SwiftUI
 import RealityKit
 import ARKit
 import Combine
-import UserNotifications
 import TextEntity
-import AVFoundation
+import FocusEntity
 
+/// A custom AR view class for handling augmented reality interactions in the Magical Garden app.
 class CustomARView: ARView {
     
     // MARK: - Properties
     
-     var postProcess: PostProcess?
+    /// Handles post-processing effects.
+    var postProcess: PostProcess?
+    
+    /// Manages save and load states.
     var saveLoadState: SaveLoadState
+    
+    /// Manages AR session states.
     var arState: ARState
+    
+    /// Manages session settings.
     var sessionSettings: SessionSettings
     
     var peopleOcclusionCancellable: AnyCancellable?
     var objectOcclusionCancellable: AnyCancellable?
-    var helpDebugCancellable: AnyCancellable?
     var postProcessCancellable: AnyCancellable?
+    var soundCancellable: AnyCancellable?
     var animationCancellable: Set<AnyCancellable> = []
     
-    private var timers: [ModelEntity: Timer] = [:]
+    /// Timers for model entities.
+    var timers: [ModelEntity: Timer] = [:]
+    
+    /// Flags indicating if models are waiting to grow.
     var isWaitingToGrow: [ModelEntity: Bool] = [:]
-    private var timerTextEntities: [ModelEntity: TextEntity] = [:]
-    private var audioPlayer: AVAudioPlayer?
-    var audioEffectPlayer: AVAudioPlayer?
+    
+    /// Text entities for timer display.
+    var timerTextEntities: [ModelEntity: TextEntity] = [:]
+    
+    /// Controllers for model animations.
+    var animationControllers: [ModelEntity: AnimationPlaybackController] = [:]
+    
+    /// Anchors for virtual objects.
     var virtualObjectAnchors: [ARAnchor] = []
+    
+    /// List of plants that have been placed.
+    var plantsPlaced: [String] = []
+    
+    /// Flag indicating if the AR map is being relocalized.
     var isRelocalizingMap = false
     
     let storedData = UserDefaults.standard
     let mapKey = "ar.worldmap"
+    
+    /// Lazy-loaded data for the AR world map.
     lazy var worldMapData: Data? = {
         storedData.data(forKey: mapKey)
     }()
     
     private var cancellables: Set<AnyCancellable> = []
     var selectedModelName: String = "plant1"
+    var focusEntity: FocusEntity?
     
     // MARK: - Initialization
     
+    /// Initializes the custom AR view with the specified frame and settings.
     required init(frame frameRect: CGRect, sessionSettings: SessionSettings, saveLoadState: SaveLoadState, arState: ARState) {
         self.sessionSettings = sessionSettings
         self.saveLoadState = saveLoadState
         self.arState = arState
         super.init(frame: frameRect)
-        
+        self.focusEntity = FocusEntity(on: self, style: .classic(color: .blue))
         postProcess = .init(arView: self)
         setup()
         subscribeToActionStream()
         initializeSettings()
         setUpSubscribers()
-        
-        SoundManager.shared.playBackgroundMusic(fileName: "Music", fileType: "wav")
     }
     
     @objc required dynamic init?(coder decoder: NSCoder) {
@@ -79,17 +94,21 @@ class CustomARView: ARView {
     
     // MARK: - AR Configuration and Setup
     
-     func setup() {
+    /// Sets up the AR session and configures gestures.
+    func setup() {
         session.run(defaultConfiguration)
         session.delegate = self
         setupGestures()
-        debugOptions = [.showFeaturePoints, .showSceneUnderstanding]
     }
     
+    /// The default configuration for AR world tracking.
     var defaultConfiguration: ARWorldTrackingConfiguration {
         let configuration = ARWorldTrackingConfiguration()
         configuration.planeDetection = .horizontal
         configuration.environmentTexturing = .automatic
+        configuration.frameSemantics.insert(.personSegmentationWithDepth)
+        environment.sceneUnderstanding.options.insert(.occlusion)
+        environment.sceneUnderstanding.options.insert(.receivesLighting)
         
         if ARWorldTrackingConfiguration.supportsSceneReconstruction(.mesh) {
             configuration.sceneReconstruction = .mesh
@@ -100,12 +119,15 @@ class CustomARView: ARView {
     
     // MARK: - Settings Management
     
+    /// Initializes the settings for the AR view.
     func initializeSettings() {
-        updatePeopleOcclusion(isEnabled: sessionSettings.isPeopleOcclusionEnabled)
-        updateObjectOcclusion(isEnabled: sessionSettings.isObjectOcclusionEnabled)
-        updateHelpDebug(isEnabled: sessionSettings.isHelpDebugEnabled)
+        // updatePeopleOcclusion(isEnabled: sessionSettings.isPeopleOcclusionEnabled)
+        // updateObjectOcclusion(isEnabled: sessionSettings.isObjectOcclusionEnabled)
+        updatePostProcess(isEnabled: sessionSettings.isPostProcessEnabled)
+        // updateSound(isEnabled: sessionSettings.isSoundEnabled)
     }
     
+    /// Sets up subscribers for session settings changes.
     private func setUpSubscribers() {
         peopleOcclusionCancellable = sessionSettings.$isPeopleOcclusionEnabled.sink { [weak self] isEnabled in
             self?.updatePeopleOcclusion(isEnabled: isEnabled)
@@ -115,17 +137,18 @@ class CustomARView: ARView {
             self?.updateObjectOcclusion(isEnabled: isEnabled)
         }
         
-        helpDebugCancellable = sessionSettings.$isHelpDebugEnabled.sink { [weak self] isEnabled in
-            self?.updateHelpDebug(isEnabled: isEnabled)
-        }
-        
         postProcessCancellable = sessionSettings.$isPostProcessEnabled.sink { [weak self] isEnabled in
             self?.updatePostProcess(isEnabled: isEnabled)
+        }
+        
+        soundCancellable = sessionSettings.$isSoundEnabled.sink { [weak self] isEnabled in
+            self?.updateSound(isEnabled: isEnabled)
         }
     }
     
     // MARK: - AR Configuration Updates
     
+    /// Updates the AR session to enable or disable people occlusion.
     func updatePeopleOcclusion(isEnabled: Bool) {
         guard ARWorldTrackingConfiguration.supportsFrameSemantics(.personSegmentationWithDepth) else {
             return
@@ -144,86 +167,32 @@ class CustomARView: ARView {
         session.run(configuration)
     }
     
+    /// Updates the AR session to enable or disable object occlusion.
     func updateObjectOcclusion(isEnabled: Bool) {
-        if isEnabled {
+        if (isEnabled) {
             environment.sceneUnderstanding.options.insert(.occlusion)
         } else {
             environment.sceneUnderstanding.options.remove(.occlusion)
         }
     }
     
-    func updateHelpDebug(isEnabled: Bool) {
-        if isEnabled {
-            debugOptions.insert(.showFeaturePoints)
-        } else {
-            debugOptions.remove(.showFeaturePoints)
-        }
-    }
-    
+    /// Updates the AR session to enable or disable post-processing effects.
     func updatePostProcess(isEnabled: Bool) {
         postProcess?.switchPostProcessState()
     }
     
-    
-    // MARK: - Timers and Effects
-    
-    func startRandomTimer(for modelEntity: ModelEntity) {
-        let randomTimeInterval = TimeInterval.random(in: 30...180)
-        addTimerText(to: modelEntity, countdown: randomTimeInterval)
-        
-        let timer = Timer.scheduledTimer(withTimeInterval: randomTimeInterval, repeats: false) { [weak self] _ in
-            self?.emitSubtleEffect(for: modelEntity)
-            self?.sendLocalNotification()
-            self?.isWaitingToGrow[modelEntity] = false
-            self?.removeTimerText(from: modelEntity)
+    /// Updates the AR session to enable or disable sound effects.
+    func updateSound(isEnabled: Bool) {
+        if isEnabled {
+            SoundManager.shared.resumeAllSounds()
+        } else {
+            SoundManager.shared.muteAllSounds()
         }
-        
-        timers[modelEntity] = timer
     }
     
-    func emitSubtleEffect(for modelEntity: ModelEntity) {
-        var jumpTransform = modelEntity.transform
-        jumpTransform.translation.y += 0.1
-        let originalTransform = modelEntity.transform
-        
-        func animateJump() {
-            modelEntity.move(to: jumpTransform, relativeTo: modelEntity.parent, duration: 0.5, timingFunction: .easeInOut)
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                modelEntity.move(to: originalTransform, relativeTo: modelEntity.parent, duration: 0.5, timingFunction: .easeInOut)
-            }
-            
-            let particleEntity = ModelEntity(mesh: .generateSphere(radius: 0.03))
-            var material = SimpleMaterial()
-            material.baseColor = .color(.cyan)
-            particleEntity.model?.materials = [material]
-            
-            particleEntity.transform.translation = modelEntity.transform.translation
-            particleEntity.transform.translation.y += 0.2
-            particleEntity.transform.translation.x += 0.2
-            particleEntity.name = "particles"
-            
-            modelEntity.addChild(particleEntity)
-            if #available(iOS 18.0, *) {
-                modelEntity.components.set(particleSystem())
-            }
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                particleEntity.removeFromParent()
-            }
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
-                animateJump()
-            }
-        }
-        
-        animateJump()
-        
-        SoundManager.shared.playSoundEffect(fileName: "SFX_2", fileType: "wav")
-    }
+    // MARK: - Helpers
     
-    // MARK: - Notifications
-    
+    /// Sends a local notification to the user.
     func sendLocalNotification() {
         let content = UNMutableNotificationContent()
         content.title = "Your plant needs attention!"
@@ -240,68 +209,7 @@ class CustomARView: ARView {
         }
     }
     
-    // MARK: - Timer Text Management
-    
-    func addTimerText(to modelEntity: ModelEntity, countdown: TimeInterval) {
-        let textEntity = TextEntity(text: formatTime(countdown))
-        textEntity.position.y = 0.2
-        modelEntity.addChild(textEntity)
-        timerTextEntities[modelEntity] = textEntity
-        
-        for secondsLeft in (0...Int(countdown)).reversed() {
-            let delayInSeconds = Double(Int(countdown) - secondsLeft)
-            DispatchQueue.main.asyncAfter(deadline: .now() + delayInSeconds) {
-                textEntity.text = self.formatTime(Double(secondsLeft))
-            }
-        }
-    }
-
-    // Function to format time based on seconds or minutes
-    private func formatTime(_ timeInterval: TimeInterval) -> String {
-        if timeInterval < 60 {
-            return "\(Int(timeInterval))s"
-        } else {
-            let minutes = Int(timeInterval) / 60
-            let seconds = Int(timeInterval) % 60
-            return String(format: "%dm %02ds", minutes, seconds)
-        }
-    }
-
-    
-    func removeTimerText(from modelEntity: ModelEntity) {
-        if let textEntity = timerTextEntities[modelEntity] {
-            textEntity.removeFromParent()
-            timerTextEntities.removeValue(forKey: modelEntity)
-        }
-    }
-    
-    func updateTimerText(entity: ModelEntity, countdown: TimeInterval) {
-        guard let textEntity = timerTextEntities[entity] else {
-            return
-        }
-        
-        textEntity.text = "\(Int(countdown))s"
-    }
-    
-    // MARK: - Utility
-    
-    @available(iOS 18.0, *)
-    func particleSystem() -> ParticleEmitterComponent {
-        var particles = ParticleEmitterComponent()
-        particles.emitterShape = .sphere
-        particles.emitterShapeSize = [1, 1, 1] * 0.05
-        
-        particles.mainEmitter.birthRate = 50
-        particles.mainEmitter.size = 0.03
-        particles.mainEmitter.acceleration = particles.mainEmitter.acceleration / 2
-        particles.mainEmitter.lifeSpan = 2
-        particles.mainEmitter.color = .evolving(start: .single(.white),
-                                                end: .single(.cyan))
-        return particles
-    }
-    
-    // MARK: - Private Helpers
-    
+    /// Subscribes to action stream events from the AR manager.
     private func subscribeToActionStream() {
         ARManager.shared.actionStream.sink { [weak self] action in
             switch action {

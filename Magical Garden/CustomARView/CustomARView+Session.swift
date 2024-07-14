@@ -90,11 +90,15 @@ extension CustomARView: ARSessionDelegate {
             if frame.anchors.contains(where: { $0.name == "virtualObject" }) {
                 message = "Tap 'Save Experience' to keep track of your plants."
             } else {
-                message = "Tap on the screen to place a plant on a plane surface."
+                    if self.focusEntity!.onPlane {
+                        message = "Tap on the screen to place a plant on a plane surface."
+                    } else {
+                        message = "Move around to map the environment and place your plants."
+                    }
             }
             
         case (.normal, _) where self.worldMapData != nil && !self.isRelocalizingMap:
-            message = "Move around to map the environment or tap 'Load Experience' to resume nurturing your plants."
+            message = "Move around to map the environment and place your plants."
             
         case (.normal, _) where self.worldMapData == nil:
             message = "Move around to map the environment and place your plants."

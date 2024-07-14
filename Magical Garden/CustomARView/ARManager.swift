@@ -19,19 +19,13 @@ enum ARAction {
 /// Singleton class responsible for managing AR actions.
 final class ARManager: ObservableObject {
     
-    // MARK: - Properties
-    
     /// Shared instance of ARManager accessible throughout the app.
     static let shared = ARManager()
     
     /// Subject for publishing AR actions.
     let actionStream = PassthroughSubject<ARAction, Never>()
     
-    // MARK: - Initialization
-    
     private init() { }
-    
-    // MARK: - Public Methods
     
     /// Sends an AR action to subscribers.
     ///

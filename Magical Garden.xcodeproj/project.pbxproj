@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,12 +11,6 @@
 		D00A1E9B2C3A77A20029F340 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A1E942C3A77A20029F340 /* Filter.swift */; };
 		D00A1E9C2C3A77A20029F340 /* PostProcess.metal in Sources */ = {isa = PBXBuildFile; fileRef = D00A1E982C3A77A20029F340 /* PostProcess.metal */; };
 		D00A1E9D2C3A77A20029F340 /* FunctionConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A1E952C3A77A20029F340 /* FunctionConstants.swift */; };
-		D010C05E2C3A980A00F62384 /* plant3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D010C05D2C3A980A00F62384 /* plant3.usdz */; };
-		D010C05F2C3A980A00F62384 /* plant2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D010C05C2C3A980A00F62384 /* plant2.usdz */; };
-		D010C0602C3A980A00F62384 /* plant1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D010C05B2C3A980A00F62384 /* plant1.usdz */; };
-		D010C0642C3A998400F62384 /* plant3_full.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D010C0632C3A998400F62384 /* plant3_full.usdz */; };
-		D010C0652C3A998400F62384 /* plant2_full.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D010C0622C3A998400F62384 /* plant2_full.usdz */; };
-		D010C0662C3A998400F62384 /* plant1_full.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D010C0612C3A998400F62384 /* plant1_full.usdz */; };
 		D0301BBD2C3B082D00ABA177 /* TextEntity in Frameworks */ = {isa = PBXBuildFile; productRef = D0301BBC2C3B082D00ABA177 /* TextEntity */; };
 		D04486192C3333710078C27F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04486182C3333710078C27F /* AppDelegate.swift */; };
 		D044861B2C3333710078C27F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D044861A2C3333710078C27F /* ContentView.swift */; };
@@ -38,24 +32,25 @@
 		D051D5E12C3B6AE70092B167 /* SFX_6.wav in Resources */ = {isa = PBXBuildFile; fileRef = D051D5D52C3B6AE70092B167 /* SFX_6.wav */; };
 		D051D5E32C3BD2750092B167 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5E22C3BD2750092B167 /* SoundManager.swift */; };
 		D051D5E52C3BD5F00092B167 /* HapticFeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5E42C3BD5F00092B167 /* HapticFeedbackManager.swift */; };
-		D051D5E72C3BF4660092B167 /* DropDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5E62C3BF4660092B167 /* DropDownMenu.swift */; };
 		D051D5EB2C3BF4A30092B167 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5EA2C3BF4A30092B167 /* OnBoardingView.swift */; };
 		D051D5ED2C3BF4B90092B167 /* OnBoardingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5EC2C3BF4B90092B167 /* OnBoardingCard.swift */; };
 		D051D5F12C3BF51F0092B167 /* SnapShotThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5F02C3BF51F0092B167 /* SnapShotThumbnail.swift */; };
 		D051D5F32C3BF53F0092B167 /* SessionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5F22C3BF53F0092B167 /* SessionInfo.swift */; };
 		D051D5F52C3BF5640092B167 /* SaveLoadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5F42C3BF5640092B167 /* SaveLoadButton.swift */; };
-		D051D5F72C3BF57F0092B167 /* MappingStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5F62C3BF57F0092B167 /* MappingStatusView.swift */; };
 		D051D5F92C3BF5B60092B167 /* SnapshotAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5F82C3BF5B60092B167 /* SnapshotAnchor.swift */; };
 		D051D5FB2C3BF5E30092B167 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5FA2C3BF5E30092B167 /* Extensions.swift */; };
 		D051D5FD2C3BF60C0092B167 /* MetalLibLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5FC2C3BF60C0092B167 /* MetalLibLoader.swift */; };
 		D051D5FF2C3BF6400092B167 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051D5FE2C3BF6400092B167 /* Functional.swift */; };
+		D0A94ADE2C42EECA0063D11B /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A94ADD2C42EECA0063D11B /* FileManagerExtension.swift */; };
+		D0A94AE02C43C6870063D11B /* CustomARView+Particles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A94ADF2C43C6870063D11B /* CustomARView+Particles.swift */; };
+		D0A94AE22C43C7070063D11B /* CustomARView+Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A94AE12C43C7070063D11B /* CustomARView+Effects.swift */; };
+		D0A94AE42C43C7E10063D11B /* CustomARView+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A94AE32C43C7E10063D11B /* CustomARView+Timer.swift */; };
 		D0DA75FD2C38822000CF421D /* CustomARView+Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA75FA2C38822000CF421D /* CustomARView+Persistence.swift */; };
 		D0DA75FE2C38822000CF421D /* CustomARView+Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA75FB2C38822000CF421D /* CustomARView+Render.swift */; };
 		D0DA75FF2C38822000CF421D /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA75F72C38822000CF421D /* CustomARView.swift */; };
 		D0DA76002C38822000CF421D /* CustomARView+Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA75F92C38822000CF421D /* CustomARView+Session.swift */; };
 		D0DA76012C38822000CF421D /* CustomARView+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA75F82C38822000CF421D /* CustomARView+Gesture.swift */; };
 		D0DA760A2C3882CC00CF421D /* SaveLoadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA76032C3882CC00CF421D /* SaveLoadState.swift */; };
-		D0DA760B2C3882CC00CF421D /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA76062C3882CC00CF421D /* Plant.swift */; };
 		D0DA760C2C3882CC00CF421D /* OnBoardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA76072C3882CC00CF421D /* OnBoardingItem.swift */; };
 		D0DA760D2C3882CC00CF421D /* ARState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA76042C3882CC00CF421D /* ARState.swift */; };
 		D0DA760E2C3882CC00CF421D /* OnBoardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA76082C3882CC00CF421D /* OnBoardingData.swift */; };
@@ -87,12 +82,6 @@
 		D00A1E952C3A77A20029F340 /* FunctionConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionConstants.swift; sourceTree = "<group>"; };
 		D00A1E972C3A77A20029F340 /* PostProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProcess.swift; sourceTree = "<group>"; };
 		D00A1E982C3A77A20029F340 /* PostProcess.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PostProcess.metal; sourceTree = "<group>"; };
-		D010C05B2C3A980A00F62384 /* plant1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = plant1.usdz; sourceTree = "<group>"; };
-		D010C05C2C3A980A00F62384 /* plant2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = plant2.usdz; sourceTree = "<group>"; };
-		D010C05D2C3A980A00F62384 /* plant3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = plant3.usdz; sourceTree = "<group>"; };
-		D010C0612C3A998400F62384 /* plant1_full.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = plant1_full.usdz; sourceTree = "<group>"; };
-		D010C0622C3A998400F62384 /* plant2_full.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = plant2_full.usdz; sourceTree = "<group>"; };
-		D010C0632C3A998400F62384 /* plant3_full.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = plant3_full.usdz; sourceTree = "<group>"; };
 		D0301BB92C3AE4F300ABA177 /* Magical-Garden-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Magical-Garden-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D04486152C3333710078C27F /* Magical Garden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magical Garden.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04486182C3333710078C27F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,17 +105,19 @@
 		D051D5D72C3B6AE70092B167 /* SFX_8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SFX_8.wav; sourceTree = "<group>"; };
 		D051D5E22C3BD2750092B167 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		D051D5E42C3BD5F00092B167 /* HapticFeedbackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackManager.swift; sourceTree = "<group>"; };
-		D051D5E62C3BF4660092B167 /* DropDownMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenu.swift; sourceTree = "<group>"; };
 		D051D5EA2C3BF4A30092B167 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		D051D5EC2C3BF4B90092B167 /* OnBoardingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCard.swift; sourceTree = "<group>"; };
 		D051D5F02C3BF51F0092B167 /* SnapShotThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapShotThumbnail.swift; sourceTree = "<group>"; };
 		D051D5F22C3BF53F0092B167 /* SessionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionInfo.swift; sourceTree = "<group>"; };
 		D051D5F42C3BF5640092B167 /* SaveLoadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLoadButton.swift; sourceTree = "<group>"; };
-		D051D5F62C3BF57F0092B167 /* MappingStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingStatusView.swift; sourceTree = "<group>"; };
 		D051D5F82C3BF5B60092B167 /* SnapshotAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotAnchor.swift; sourceTree = "<group>"; };
 		D051D5FA2C3BF5E30092B167 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D051D5FC2C3BF60C0092B167 /* MetalLibLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalLibLoader.swift; sourceTree = "<group>"; };
 		D051D5FE2C3BF6400092B167 /* Functional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functional.swift; sourceTree = "<group>"; };
+		D0A94ADD2C42EECA0063D11B /* FileManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtension.swift; sourceTree = "<group>"; };
+		D0A94ADF2C43C6870063D11B /* CustomARView+Particles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomARView+Particles.swift"; sourceTree = "<group>"; };
+		D0A94AE12C43C7070063D11B /* CustomARView+Effects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomARView+Effects.swift"; sourceTree = "<group>"; };
+		D0A94AE32C43C7E10063D11B /* CustomARView+Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomARView+Timer.swift"; sourceTree = "<group>"; };
 		D0DA75F72C38822000CF421D /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
 		D0DA75F82C38822000CF421D /* CustomARView+Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomARView+Gesture.swift"; sourceTree = "<group>"; };
 		D0DA75F92C38822000CF421D /* CustomARView+Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomARView+Session.swift"; sourceTree = "<group>"; };
@@ -135,13 +126,28 @@
 		D0DA76032C3882CC00CF421D /* SaveLoadState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLoadState.swift; sourceTree = "<group>"; };
 		D0DA76042C3882CC00CF421D /* ARState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARState.swift; sourceTree = "<group>"; };
 		D0DA76052C3882CC00CF421D /* ButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonState.swift; sourceTree = "<group>"; };
-		D0DA76062C3882CC00CF421D /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		D0DA76072C3882CC00CF421D /* OnBoardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingItem.swift; sourceTree = "<group>"; };
 		D0DA76082C3882CC00CF421D /* OnBoardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingData.swift; sourceTree = "<group>"; };
 		D0DA762A2C39BC6C00CF421D /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		D0DA762C2C3A028A00CF421D /* SessionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSettings.swift; sourceTree = "<group>"; };
 		D0DA762E2C3A039000CF421D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D0A94AE62C43C8A90063D11B /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				plant1.usdz,
+				plant2.usdz,
+				plant3.usdz,
+			);
+			target = D04486142C3333710078C27F /* Magical Garden */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D0A94AE52C43C8A20063D11B /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (D0A94AE62C43C8A90063D11B /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D04486122C3333710078C27F /* Frameworks */ = {
@@ -176,6 +182,7 @@
 				D00A1E972C3A77A20029F340 /* PostProcess.swift */,
 				D00A1E942C3A77A20029F340 /* Filter.swift */,
 				D00A1E952C3A77A20029F340 /* FunctionConstants.swift */,
+				D051D5FE2C3BF6400092B167 /* Functional.swift */,
 				D00A1E982C3A77A20029F340 /* PostProcess.metal */,
 			);
 			path = PostProcess;
@@ -186,29 +193,24 @@
 			children = (
 				D051D5E22C3BD2750092B167 /* SoundManager.swift */,
 				D051D5E42C3BD5F00092B167 /* HapticFeedbackManager.swift */,
+				D0DA762C2C3A028A00CF421D /* SessionSettings.swift */,
 				D051D5F82C3BF5B60092B167 /* SnapshotAnchor.swift */,
 				D051D5FA2C3BF5E30092B167 /* Extensions.swift */,
 				D051D5FC2C3BF60C0092B167 /* MetalLibLoader.swift */,
-				D051D5FE2C3BF6400092B167 /* Functional.swift */,
+				D0A94ADD2C42EECA0063D11B /* FileManagerExtension.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		D0301BBB2C3B082D00ABA177 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D044860C2C3333710078C27F = {
 			isa = PBXGroup;
 			children = (
 				D04486172C3333710078C27F /* Magical Garden */,
+				D044861C2C3333730078C27F /* Assets.xcassets */,
+				D044861E2C3333730078C27F /* Preview Content */,
 				D04486282C3333740078C27F /* Magical GardenTests */,
 				D04486322C3333740078C27F /* Magical GardenUITests */,
 				D04486162C3333710078C27F /* Products */,
-				D0301BBB2C3B082D00ABA177 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -228,22 +230,14 @@
 				D0301BB92C3AE4F300ABA177 /* Magical-Garden-Info.plist */,
 				D04486182C3333710078C27F /* AppDelegate.swift */,
 				D044861A2C3333710078C27F /* ContentView.swift */,
-				D051D6002C3C75AD0092B167 /* OnBoarding */,
+				D0DA75FC2C38822000CF421D /* CustomARView */,
 				D0DA76182C3882F400CF421D /* Views */,
 				D0DA76092C3882CC00CF421D /* Model */,
-				D0DA75FC2C38822000CF421D /* CustomARView */,
 				D00A1E992C3A77A20029F340 /* PostProcess */,
 				D00A1EA22C3A77F20029F340 /* Helpers */,
-				D044861C2C3333730078C27F /* Assets.xcassets */,
+				D051D6002C3C75AD0092B167 /* OnBoarding */,
 				D051D5D82C3B6AE70092B167 /* Audio FX */,
-				D010C05B2C3A980A00F62384 /* plant1.usdz */,
-				D010C05C2C3A980A00F62384 /* plant2.usdz */,
-				D010C05D2C3A980A00F62384 /* plant3.usdz */,
-				D010C0612C3A998400F62384 /* plant1_full.usdz */,
-				D010C0622C3A998400F62384 /* plant2_full.usdz */,
-				D010C0632C3A998400F62384 /* plant3_full.usdz */,
-				D044861E2C3333730078C27F /* Preview Content */,
-				D0DA762C2C3A028A00CF421D /* SessionSettings.swift */,
+				D0A94AE52C43C8A20063D11B /* Models */,
 			);
 			path = "Magical Garden";
 			sourceTree = "<group>";
@@ -300,6 +294,15 @@
 			path = OnBoarding;
 			sourceTree = "<group>";
 		};
+		D051D6012C3D01F90092B167 /* Control UI */ = {
+			isa = PBXGroup;
+			children = (
+				D0DA762A2C39BC6C00CF421D /* ControlView.swift */,
+				D0DA762E2C3A039000CF421D /* SettingsView.swift */,
+			);
+			path = "Control UI";
+			sourceTree = "<group>";
+		};
 		D0DA75FC2C38822000CF421D /* CustomARView */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +312,9 @@
 				D0DA75F92C38822000CF421D /* CustomARView+Session.swift */,
 				D0DA75FA2C38822000CF421D /* CustomARView+Persistence.swift */,
 				D0DA75FB2C38822000CF421D /* CustomARView+Render.swift */,
+				D0A94ADF2C43C6870063D11B /* CustomARView+Particles.swift */,
+				D0A94AE12C43C7070063D11B /* CustomARView+Effects.swift */,
+				D0A94AE32C43C7E10063D11B /* CustomARView+Timer.swift */,
 			);
 			path = CustomARView;
 			sourceTree = "<group>";
@@ -319,7 +325,6 @@
 				D0DA76032C3882CC00CF421D /* SaveLoadState.swift */,
 				D0DA76042C3882CC00CF421D /* ARState.swift */,
 				D0DA76052C3882CC00CF421D /* ButtonState.swift */,
-				D0DA76062C3882CC00CF421D /* Plant.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -327,13 +332,10 @@
 		D0DA76182C3882F400CF421D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D0DA762A2C39BC6C00CF421D /* ControlView.swift */,
-				D0DA762E2C3A039000CF421D /* SettingsView.swift */,
-				D051D5E62C3BF4660092B167 /* DropDownMenu.swift */,
+				D051D6012C3D01F90092B167 /* Control UI */,
 				D051D5F02C3BF51F0092B167 /* SnapShotThumbnail.swift */,
 				D051D5F22C3BF53F0092B167 /* SessionInfo.swift */,
 				D051D5F42C3BF5640092B167 /* SaveLoadButton.swift */,
-				D051D5F62C3BF57F0092B167 /* MappingStatusView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -451,8 +453,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D04486202C3333730078C27F /* Preview Assets.xcassets in Resources */,
-				D010C05E2C3A980A00F62384 /* plant3.usdz in Resources */,
-				D010C05F2C3A980A00F62384 /* plant2.usdz in Resources */,
 				D051D5D92C3B6AE70092B167 /* SFX_3.wav in Resources */,
 				D051D5DA2C3B6AE70092B167 /* Music.wav in Resources */,
 				D051D5DB2C3B6AE70092B167 /* SFX_7.wav in Resources */,
@@ -462,10 +462,6 @@
 				D051D5DF2C3B6AE70092B167 /* SFX_2.wav in Resources */,
 				D051D5E02C3B6AE70092B167 /* SFX_1.wav in Resources */,
 				D051D5E12C3B6AE70092B167 /* SFX_6.wav in Resources */,
-				D010C0642C3A998400F62384 /* plant3_full.usdz in Resources */,
-				D010C0652C3A998400F62384 /* plant2_full.usdz in Resources */,
-				D010C0662C3A998400F62384 /* plant1_full.usdz in Resources */,
-				D010C0602C3A980A00F62384 /* plant1.usdz in Resources */,
 				D044861D2C3333730078C27F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,17 +488,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0DA760A2C3882CC00CF421D /* SaveLoadState.swift in Sources */,
-				D0DA760B2C3882CC00CF421D /* Plant.swift in Sources */,
+				D0A94ADE2C42EECA0063D11B /* FileManagerExtension.swift in Sources */,
 				D0DA760C2C3882CC00CF421D /* OnBoardingItem.swift in Sources */,
 				D0DA760D2C3882CC00CF421D /* ARState.swift in Sources */,
 				D0DA760E2C3882CC00CF421D /* OnBoardingData.swift in Sources */,
-				D051D5F72C3BF57F0092B167 /* MappingStatusView.swift in Sources */,
 				D051D5FF2C3BF6400092B167 /* Functional.swift in Sources */,
 				D0DA760F2C3882CC00CF421D /* ButtonState.swift in Sources */,
 				D04486542C33DF860078C27F /* ARManager.swift in Sources */,
-				D051D5E72C3BF4660092B167 /* DropDownMenu.swift in Sources */,
 				D044861B2C3333710078C27F /* ContentView.swift in Sources */,
 				D0DA75FD2C38822000CF421D /* CustomARView+Persistence.swift in Sources */,
+				D0A94AE42C43C7E10063D11B /* CustomARView+Timer.swift in Sources */,
 				D0DA75FE2C38822000CF421D /* CustomARView+Render.swift in Sources */,
 				D0DA75FF2C38822000CF421D /* CustomARView.swift in Sources */,
 				D051D5ED2C3BF4B90092B167 /* OnBoardingCard.swift in Sources */,
@@ -515,12 +510,14 @@
 				D0DA762F2C3A039000CF421D /* SettingsView.swift in Sources */,
 				D00A1E9A2C3A77A20029F340 /* PostProcess.swift in Sources */,
 				D051D5E52C3BD5F00092B167 /* HapticFeedbackManager.swift in Sources */,
+				D0A94AE02C43C6870063D11B /* CustomARView+Particles.swift in Sources */,
 				D00A1E9B2C3A77A20029F340 /* Filter.swift in Sources */,
 				D00A1E9C2C3A77A20029F340 /* PostProcess.metal in Sources */,
 				D00A1E9D2C3A77A20029F340 /* FunctionConstants.swift in Sources */,
 				D051D5F12C3BF51F0092B167 /* SnapShotThumbnail.swift in Sources */,
 				D0DA762B2C39BC6C00CF421D /* ControlView.swift in Sources */,
 				D0DA76002C38822000CF421D /* CustomARView+Session.swift in Sources */,
+				D0A94AE22C43C7070063D11B /* CustomARView+Effects.swift in Sources */,
 				D0DA76012C38822000CF421D /* CustomARView+Gesture.swift in Sources */,
 				D04486192C3333710078C27F /* AppDelegate.swift in Sources */,
 				D051D5F52C3BF5640092B167 /* SaveLoadButton.swift in Sources */,
@@ -687,7 +684,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Magical Garden/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 5FDLG4RNFN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -724,7 +721,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Magical Garden/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 5FDLG4RNFN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

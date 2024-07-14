@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SaveLoadButton: View {
     @EnvironmentObject var saveLoadState: SaveLoadState
+    @State private var savedAlert = false
 
     var body: some View {
         HStack {
@@ -29,6 +30,7 @@ struct SaveLoadButton: View {
             
             Button(action: {
                 saveLoadState.saveButton.isPressed = true
+                savedAlert = true
             }) {
                 Text("Save Experience")
                     .padding(.horizontal, 14)
@@ -40,6 +42,9 @@ struct SaveLoadButton: View {
             .foregroundColor(.white)
             .cornerRadius(8)
             .disabled(!saveLoadState.saveButton.isEnabled)
+            .alert("Your garden is now saved", isPresented: $savedAlert) {
+                      Button("OK", role: .cancel) { }
+            }
         }
     }
 }
